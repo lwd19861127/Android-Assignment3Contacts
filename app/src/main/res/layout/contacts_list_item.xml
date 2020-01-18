@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+<!--        <variable-->
+<!--            name="ContactClickListener"-->
+<!--            type="com.derrick.park.assignment3_contacts.activities.ContactClickListener" />-->
+        <variable
+            name="contact"
+            type="com.derrick.park.assignment3_contacts.models.Contact" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- android:onClick="@{() -> ContactClickListener.onClick(contact)}" -->
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" /><!--        @{contact.name.toString()}-->
+
+        <TextView
+            android:id="@+id/dataTextView"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cell" /><!--        @{contact.cell}-->
+    </LinearLayout>
+</layout>
